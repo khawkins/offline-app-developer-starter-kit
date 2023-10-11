@@ -32,9 +32,14 @@ In the component’s JS file, the `handleChange` is called with the selected rec
 
 3. Login to the Mobile Offline App. Let the briefcase priming is fully completed.
 
-4. Turn off network on device, tap the New button from Contacts home page to create a contact.
-    - Fill required data fields, e.g., Last Name
-    - Tap the Account lookup field at the bottom. It brings up a modal page with a search box. You can type any key to start search. The dropdown list shows any matched records in cache, including the drafts! Select an account record from the dropdown list. The modal page is automatically closed.
-    - Now you have the account record filled in the lookup field. You can go ahead to save it as a new contact draft.
+4. To verify that you can create records while offline:
+
+    1. Turn off the network on your device (e.g. by putting it in Airplane Mode, turning off WiFi, etc.).
+    2. Tap the `New` button from the `Contacts` home page to create a new contact.
+    3. Fill in the required data fields, like Last Name.
+    4. Tap the `Account` lookup field at the bottom. It will bring up a modal page with a search box.
+    5. Start searching by entering your filter criteria. The dropdown list shows any records matching your filter in the local cache, including the drafts!
+    6. Select an `Account` record from the dropdown list. The modal page is automatically closed, and the `Account` record is filled in the lookup field.
+    7. Save the record as a new `Contact` draft.
     
-5. Turn on network on device, let the drafts automatically synced up with server. You should see a new contact is created successfully with an associated account!
+5. Turn on the device network, and let the drafts automatically sync up with the server. You should see that a new contact has been created successfully with an associated account!
