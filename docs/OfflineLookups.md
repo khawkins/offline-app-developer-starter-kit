@@ -1,6 +1,6 @@
 # Offline Lookups
 
-[The offline lookups example](https://github.com/salesforce/offline-app-developer-starter-kit/tree/main/force-app/main/default/lwc/createContactRecord) in Starter Kit demonstrates the capability to search a list of objects (e.g., accounts) when creating/updating a record (e.g., contact) for mobile offline app. When device is online, the lookup field searches records by making network calls. When offline, it searches records from cache. In order to have records available for search offline, they need to be downloaded during briefcase priming. In addition to primed records, any existing drafts can also be searched in offline.
+[The offline lookups example](../force-app/main/default/lwc/createContactRecord) in Starter Kit demonstrates the capability to search a list of objects (e.g., accounts) when creating/updating a record (e.g., contact) for mobile offline app. When device is online, the lookup field searches records by making network calls. When offline, it searches records from cache. In order to have records available for search offline, they need to be downloaded during briefcase priming. In addition to primed records, any existing drafts can also be searched in offline.
 
 In the example of createContactRecord LWC, a lookup field is added as a base component `lightning-record-picker`  in the HTML file. Upon clicked on the field, a modal page will be presented where use can type a key word to search a list of accounts while creating a contact record. 
 
