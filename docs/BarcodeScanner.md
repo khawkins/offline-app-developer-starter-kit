@@ -1,3 +1,5 @@
+# Barcode Scanner
+
 [The barcode scanner starter kit example](../force-app/main/default/lwc/scanBarcodeLookUp/) provides an LWC triggered from a global quick action on the landing page, for a user to scan a barcode and do a record lookup based on its value. Upon scanning the barcode of a supported type, the component does a GraphQL query on the returned value, to search the `Product` records with a matching barcode value, and displays the associated record to the user.
 
 Note that records prefetched in the briefcase can be searched while the device is offline.
@@ -6,9 +8,9 @@ Note that records prefetched in the briefcase can be searched while the device i
 
 1. [Configure your Offline Briefcase](../README.md#define-an-offline-briefcase) with the `Product` sObject.
 2. Deploy the [`scanBarcodeLookUp`](../force-app/main/default/lwc/scanBarcodeLookUp) LWC, the [`viewProduct2Record`](../force-app/main/default/lwc/viewProduct2Record) LWC, and the [`Product2 view`](../force-app/main/default/quickActions/Product2.view.quickAction-meta.xml) quick action to your org.
-3. There are two options that you can use to add the `scanBarcodeLookUp` LWC as a global quick action:
-    - Go to Setup, select Global Actions and create the new Action with the `scanBarcodeLookUp` LWC.
-    - Alternatively, you can deploy the `scanBarcodeLookUp` LWC as a quick action from your local Starter Kit project, by creating a new file within the `quickActions` folder that includes the following:
+3. There are two options for setting up the `scanBarcodeLookUp` LWC as a global quick action:
+    - Go to Setup, select Global Actions and create a new Global Action with the `scanBarcodeLookUp` LWC. See [Create Global Quick Actions](https://help.salesforce.com/s/articleView?id=sf.creating_global_actions.htm&type=5) for more information on how to create LWC global quick actions from Setup.
+    - Alternatively, you can deploy the `scanBarcodeLookUp` LWC as a quick action from your local Starter Kit project, by creating a new file within the `force-app/main/default/quickActions` folder that includes the following:
 
         ```xml
         <?xml version="1.0" encoding="UTF-8" ?>
