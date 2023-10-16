@@ -23,7 +23,7 @@ Note that records prefetched in the briefcase can be searched while the device i
 
 4. Add the global action to publisher layout. 
 
-  ![Add LWC Quick Actions to Mobile Layouts](../images/LWCQuickActionsPublisherLayouts.png)
+    ![Add LWC Quick Actions to Mobile Layouts](../images/LWCQuickActionsPublisherLayouts.png)
 
 5. In Setup, enter Static Resources in quick find and select Static Resources under Custom Code. Update the landing page json file by adding a global action in the actionList block and upload it.
 
