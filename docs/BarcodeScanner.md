@@ -5,7 +5,7 @@ Note that records prefetched in the briefcase can be searched while the device i
 # How to Configure
 
 1. [Configure your Offline Briefcase](../README.md#define-an-offline-briefcase) with the `Product` sObject.
-2. Deploy the [`scanBarcodeLookUp`](../force-app/main/default/lwc/scanBarcodeLookUp) LWC, the [`viewProduct2Record`](../force-app/main/default/lwc/viewProductToRecord) LWC, and the [`Product2 view`](../force-app/main/default/quickActions/Product2.view.quickAction-meta.xml) quick action to your org.
+2. Deploy the [`scanBarcodeLookUp`](../force-app/main/default/lwc/scanBarcodeLookUp) LWC, the [`viewProduct2Record`](../force-app/main/default/lwc/viewProduct2Record) LWC, and the [`Product2 view`](../force-app/main/default/quickActions/Product2.view.quickAction-meta.xml) quick action to your org.
 3. There are two options that you can use to add the `scanBarcodeLookUp` LWC as a global quick action:
     - Go to Setup, select Global Actions and create the new Action with the `scanBarcodeLookUp` LWC.
     - Alternatively, you can deploy the `scanBarcodeLookUp` LWC as a quick action by creating a new file within the `quickActions` folder that includes the following:
