@@ -40,7 +40,7 @@ If you’re unfamiliar with developing Lightning Web Components, the [Building L
 
 1. Create an LWC using SFDX: Create Lightning Web Component. Give it a name such as "`viewObjectType`". Replace "`objectType`" with the Object Name you're trying to display, such as "`viewWorkOrder`".
 2. Get your LWC to render your custom object. If you need a starting point:
-  * Use the [viewAccountRecord](https://github.com/salesforce/offline-app-developer-starter-kit/tree/main/force-app/main/default/lwc/viewAccountRecord) in the Starter Kit as an example. Copy the content of the `.js`, .`html`, `.xml`, and `.css` files into your new component's files.
+  * Use the [`viewAccountRecord` component](force-app/main/default/lwc/viewAccountRecord) in the Starter Kit as an example. Copy the content of the `.js`, .`html`, `.xml`, and `.css` files into your new component's files.
   * Change your `view<ObjectType>.js` file:
     * Change the class name "export default class ViewAccountRecord" to your Component's name. For example, "export default class ViewObjectType".
     * Leave the imports from "lwc" and "lightning/uiRecordAPI".
